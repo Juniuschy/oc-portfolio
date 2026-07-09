@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAKURA MINAZUKI | Story Fan Site</title>
+    <meta name="description" content="樱咲六月 OC story gallery: cute Japanese/English layout with Chinese notes, likes, story cards, video preview and snack mini game." />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="screen-tone" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <b>六月</b>
+        <span>SAKURA MINAZUKI</span>
+      </a>
+      <nav aria-label="main navigation">
+        <a href="#stories">STORIES <small>故事</small></a>
+        <a href="#lily-main">MAIN <small>主线</small></a>
+        <a href="#gallery">GALLERY <small>图集</small></a>
+        <a href="#game">SNACK <small>投喂</small></a>
+        <a href="#video">MOVIE <small>视频</small></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg-label label-a">LIKE & READ</div>
+        <div class="hero-bg-label label-b">JUNE STORY CLUB</div>
+        <div class="search-bar">
+          <span>☰</span>
+          <span>Search: sakura / sanemi / cute daily story...</span>
+          <strong>六月ちゃん</strong>
+        </div>
+
+        <div class="hero-copy">
+          <p class="kicker">Original Character Story Archive <em>原创角色故事站</em></p>
+          <h1><span>SAKURA</span><span>MINAZUKI</span></h1>
+          <p class="jp-title">六月の物語を見にきてね</p>
+          <p class="cn-note">来看看樱咲六月的故事，喜欢的话请给她一点点爱心。</p>
+          <div class="hero-actions">
+            <a class="bubble-btn" href="#stories">READ STORY</a>
+            <a class="bubble-btn soft" href="#gallery">LIKE GALLERY</a>
+            <a class="bubble-btn snack-jump" href="#game">FEED JUNE</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img class="hero-cutout" src="./assets/hero_cutout.png" alt="樱咲六月透明立绘" />
+          <button class="sticker s1" data-toast="六月：故事还没看完，不许走哦。">♡</button>
+          <button class="sticker s2" data-toast="Sanemi route unlocked / 实弥路线开启">ROUTE</button>
+          <button class="sticker s3" data-toast="Tap every card to open secret notes.">INFO</button>
+        </div>
+
+        <aside class="hero-card">
+          <h2>INVITATION</h2>
+          <p>Click the story cards, send hearts, and browse every scene in its full shape.</p>
+          <p class="cn-note">点击每张图，看剧情注释，也可以点赞收藏你喜欢的画面。</p>
+        </aside>
+      </section>
+
+      <section id="game" class="section snack-section">
+        <div class="section-title">
+          <p class="kicker">Mini game <em>投喂小游戏</em></p>
+          <h2>SNACK FOR JUNE</h2>
+        </div>
+        <div class="snack-layout">
+          <div class="snack-copy">
+            <h3>Drag or tap!</h3>
+            <p>Feed June chocolate, cake, or strawberry milk. Her mood and expression will change.</p>
+            <p class="cn-note">拖动或点击甜食投喂六月，表情和心情值都会变化。</p>
+            <div class="mood-meter"><span id="moodFill"></span></div>
+            <strong id="moodText">MOOD 00%</strong>
+          </div>
+          <div class="snack-game">
+            <div class="feed-frame" id="feedFrame">
+              <img id="feedFace" src="./assets/feed_state_3.png" alt="六月投喂表情" />
+              <div id="heartLayer" class="heart-layer"></div>
+            </div>
+            <div class="snack-tray">
+              <button class="snack" data-state="0" data-score="40" aria-label="Chocolate"><img src="./assets/food_chocolate.png" alt="Chocolate" /></button>
+              <button class="snack" data-state="1" data-score="32" aria-label="Strawberry cake"><img src="./assets/food_cake.png" alt="Strawberry cake" /></button>
+              <button class="snack" data-state="2" data-score="28" aria-label="Strawberry milk"><img src="./assets/food_milk.png" alt="Strawberry milk" /></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="section story-strip">
+        <div class="section-title">
+          <p class="kicker">Pick a chapter <em>选择故事</em></p>
+          <h2>かわいい事件簿</h2>
+        </div>
+        <div class="chapter-row" id="chapterRow"></div>
+      </section>
+
+      <section id="lily-main" class="section lily-mainline">
+        <div class="section-title split">
+          <div>
+            <p class="kicker">Main chapter <em>主线篇章</em></p>
+            <h2>百合御苑篇</h2>
+          </div>
+          <p class="lily-tagline">百合盛开之时，真相却深埋于花下。</p>
+        </div>
+
+        <div class="lily-reader">
+          <aside class="lily-menu" aria-label="百合御苑篇档案">
+            <button class="active" data-lily-panel="prologue">序章</button>
+            <button data-lily-panel="world">世界观</button>
+            <button data-lily-panel="case">案件</button>
+            <button data-lily-panel="characters">人物证词</button>
+            <button data-lily-panel="timeline">时间线</button>
+            <button data-lily-panel="symbols">设定档案</button>
+            <button data-lily-panel="ending">尾声</button>
+            <button data-lily-panel="notes">创作笔记</button>
+          </aside>
+
+          <article class="lily-card">
+            <div class="lily-copy">
+              <p id="lilyEyebrow" class="kicker">LILY PALACE / PROLOGUE</p>
+              <h3 id="lilyTitle">身份、谎言与名字</h3>
+              <div id="lilyBody" class="lily-body"></div>
+            </div>
+            <div class="lily-visual">
+              <img id="lilyImage" src="./assets/story/story_30.webp" alt="百合御苑篇视觉图" />
+              <button id="lilySecret" class="sticker lily-secret" type="button">SECRET</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery-section">
+        <div class="section-title split">
+          <div>
+            <p class="kicker">Full-size preview <em>完整比例预览</em></p>
+            <h2>PLEASE LIKE JUNE'S STORIES</h2>
+          </div>
+          <div class="gallery-controls">
+            <button data-filter="all" class="active">ALL</button>
+            <button data-filter="love">LOVE</button>
+            <button data-filter="daily">DAILY</button>
+            <button data-filter="battle">BATTLE</button>
+          </div>
+        </div>
+        <div class="danmaku-box">
+          <input id="danmakuInput" maxlength="28" placeholder="Send a cute comment / 发一条可爱弹幕" />
+          <button id="sendDanmaku">SEND</button>
+        </div>
+        <div class="banner-gallery" id="galleryWall" aria-live="polite"></div>
+      </section>
+
+      <section id="video" class="section video-section">
+        <div class="section-title">
+          <p class="kicker">Movie preview <em>视频预览</em></p>
+          <h2>HIGH-LIKE MOMENTS</h2>
+        </div>
+        <div class="video-grid">
+          <article>
+            <video controls preload="metadata" playsinline src="./assets/video/11_3_3_.MP4"></video>
+            <h3>PREVIEW 01 <small>高赞片段</small></h3>
+          </article>
+          <article>
+            <video controls preload="metadata" playsinline src="./assets/video/copy_F4F5AEBE-C355-4D12-BA41-1289E58F8A04.MOV"></video>
+            <h3>PREVIEW 02 <small>高赞片段</small></h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="storyDialog">
+      <button class="close-dialog" aria-label="close">×</button>
+      <img id="modalImage" src="./assets/story/story_00.webp" alt="" />
+      <div class="modal-copy">
+        <p id="modalLabel" class="kicker"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-actions">
+          <button id="modalLike">♡ LIKE</button>
+          <button id="modalNext">NEXT STORY</button>
+        </div>
+      </div>
+    </dialog>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+    <footer>
+      <span>SAKURA MINAZUKI FAN STORY SITE</span>
+      <span>日英标题为主 / 中文注释辅助 / 点击图片看故事</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
