@@ -188,7 +188,7 @@ function renderGallery(filter = "all") {
   $("#galleryWall").innerHTML = filtered.map((s, i) => `
     <button class="story-banner ${bannerClass(s, i)}" data-id="${s.id}">
       <span class="tag-ribbon">${s.tag.toUpperCase()} / ${String(s.id + 1).padStart(2, "0")}</span>
-      <span class="story-media"><img src="${s.src}" alt="${s.en} ${s.jp}"></span>
+      <span class="story-media"><img src="${s.src}" alt="${s.en} ${s.jp}" loading="lazy" decoding="async"></span>
       <span class="story-copy">
         <span class="en">${s.en}</span>
         <span class="jp">${s.jp}</span>

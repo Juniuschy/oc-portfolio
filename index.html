@@ -47,7 +47,7 @@
         </div>
 
         <div class="hero-visual">
-          <img class="hero-cutout" src="./assets/hero_cutout.png" alt="樱咲六月透明立绘" />
+          <img class="hero-cutout" src="./assets/hero_cutout.png" alt="樱咲六月透明立绘" fetchpriority="high" decoding="async" />
           <button class="sticker s1" data-toast="六月：故事还没看完，不许走哦。">♡</button>
           <button class="sticker s2" data-toast="Sanemi route unlocked / 实弥路线开启">ROUTE</button>
           <button class="sticker s3" data-toast="Tap every card to open secret notes.">INFO</button>
@@ -75,13 +75,13 @@
           </div>
           <div class="snack-game">
             <div class="feed-frame" id="feedFrame">
-              <img id="feedFace" src="./assets/feed_state_3.png" alt="六月投喂表情" />
+              <img id="feedFace" src="./assets/feed_state_3.png" alt="六月投喂表情" decoding="async" />
               <div id="heartLayer" class="heart-layer"></div>
             </div>
             <div class="snack-tray">
-              <button class="snack" data-state="0" data-score="40" aria-label="Chocolate"><img src="./assets/food_chocolate.png" alt="Chocolate" /></button>
-              <button class="snack" data-state="1" data-score="32" aria-label="Strawberry cake"><img src="./assets/food_cake.png" alt="Strawberry cake" /></button>
-              <button class="snack" data-state="2" data-score="28" aria-label="Strawberry milk"><img src="./assets/food_milk.png" alt="Strawberry milk" /></button>
+              <button class="snack" data-state="0" data-score="40" aria-label="Chocolate"><img src="./assets/food_chocolate.png" alt="Chocolate" decoding="async" /></button>
+              <button class="snack" data-state="1" data-score="32" aria-label="Strawberry cake"><img src="./assets/food_cake.png" alt="Strawberry cake" decoding="async" /></button>
+              <button class="snack" data-state="2" data-score="28" aria-label="Strawberry milk"><img src="./assets/food_milk.png" alt="Strawberry milk" decoding="async" /></button>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@
               <div id="lilyBody" class="lily-body"></div>
             </div>
             <div class="lily-visual">
-              <img id="lilyImage" src="./assets/story/story_30.webp" alt="百合御苑篇视觉图" />
+              <img id="lilyImage" src="./assets/story/story_30.webp" alt="百合御苑篇视觉图" loading="lazy" decoding="async" />
               <button id="lilySecret" class="sticker lily-secret" type="button">SECRET</button>
             </div>
           </article>
@@ -157,11 +157,11 @@
         </div>
         <div class="video-grid">
           <article>
-            <video controls preload="metadata" playsinline src="./assets/video/11_3_3_.MP4"></video>
+            <video controls preload="none" playsinline src="./assets/video/11_3_3_.MP4"></video>
             <h3>PREVIEW 01 <small>高赞片段</small></h3>
           </article>
           <article>
-            <video controls preload="metadata" playsinline src="./assets/video/copy_F4F5AEBE-C355-4D12-BA41-1289E58F8A04.MOV"></video>
+            <video controls preload="none" playsinline src="./assets/video/copy_F4F5AEBE-C355-4D12-BA41-1289E58F8A04.MOV"></video>
             <h3>PREVIEW 02 <small>高赞片段</small></h3>
           </article>
         </div>
@@ -170,7 +170,7 @@
 
     <dialog id="storyDialog">
       <button class="close-dialog" aria-label="close">×</button>
-      <img id="modalImage" src="./assets/story/story_00.webp" alt="" />
+      <img id="modalImage" src="./assets/story/story_00.webp" alt="" loading="lazy" decoding="async" />
       <div class="modal-copy">
         <p id="modalLabel" class="kicker"></p>
         <h3 id="modalTitle"></h3>
